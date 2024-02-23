@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_Sales_View4" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" hierarchyGeneration="SQL" outputViewType="Aggregation" application="BAS" cacheInvalidationPeriod="NONE" enforceSqlExecution="true">
+<descriptions defaultDescription="CV_Sales_View4.hdbcalculationview"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="syn::Sales_View4">
+    <resourceUri>syn::Sales_View4</resourceUri>
+  </DataSource>
+</dataSources>
+<snapshotProcedures/>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+    <viewAttributes>
+      <viewAttribute id="Sales_Order_Number"/>
+      <viewAttribute id="Order_Date"/>
+      <viewAttribute id="Delivery_Date"/>
+      <viewAttribute id="Discount"/>
+      <viewAttribute id="Sales_Order_Line_Number"/>
+      <viewAttribute id="Order_Quantity"/>
+      <viewAttribute id="Unit_Price"/>
+      <viewAttribute id="Currency"/>
+      <viewAttribute id="Customer_ID"/>
+      <viewAttribute id="Customer_Name"/>
+      <viewAttribute id="City_ID"/>
+      <viewAttribute id="City_Name"/>
+      <viewAttribute id="Country"/>
+      <viewAttribute id="Country_IS02"/>
+      <viewAttribute id="Country_IS03"/>
+      <viewAttribute id="Latitude"/>
+      <viewAttribute id="Longitude"/>
+      <viewAttribute id="State"/>
+      <viewAttribute id="Region"/>
+      <viewAttribute id="Market"/>
+      <viewAttribute id="Sales_Person_ID"/>
+      <viewAttribute id="Sales_Person_Name"/>
+      <viewAttribute id="Sales_Manager"/>
+      <viewAttribute id="Product_ID"/>
+      <viewAttribute id="Product_Descriptionshort"/>
+      <viewAttribute id="Product_DescriptionMedium"/>
+      <viewAttribute id="Product_Descriptionlong"/>
+      <viewAttribute id="Product_List_Price"/>
+      <viewAttribute id="Product_Cost"/>
+      <viewAttribute id="Product_Sub_Category"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="syn::Sales_View4"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Projection_1">
+  <attributes>
+    <attribute id="Sales_Order_Number" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales_Order_Number"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Sales_Order_Number"/>
+    </attribute>
+    <attribute id="Order_Date" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Order_Date"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Order_Date"/>
+    </attribute>
+    <attribute id="Delivery_Date" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Delivery_Date"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Delivery_Date"/>
+    </attribute>
+    <attribute id="Sales_Order_Line_Number" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales_Order_Line_Number"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Sales_Order_Line_Number"/>
+    </attribute>
+    <attribute id="Currency" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Currency"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Currency"/>
+    </attribute>
+    <attribute id="Customer_ID" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Customer_ID"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Customer_ID"/>
+    </attribute>
+    <attribute id="Customer_Name" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Customer_Name"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Customer_Name"/>
+    </attribute>
+    <attribute id="City_ID" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="City_ID"/>
+      <keyMapping columnObjectName="Projection_1" columnName="City_ID"/>
+    </attribute>
+    <attribute id="City_Name" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="City_Name"/>
+      <keyMapping columnObjectName="Projection_1" columnName="City_Name"/>
+    </attribute>
+    <attribute id="Country" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Country"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Country"/>
+    </attribute>
+    <attribute id="Country_IS02" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Country_IS02"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Country_IS02"/>
+    </attribute>
+    <attribute id="Country_IS03" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Country_IS03"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Country_IS03"/>
+    </attribute>
+    <attribute id="Latitude" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Latitude"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Latitude"/>
+    </attribute>
+    <attribute id="Longitude" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Longitude"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Longitude"/>
+    </attribute>
+    <attribute id="State" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="State"/>
+      <keyMapping columnObjectName="Projection_1" columnName="State"/>
+    </attribute>
+    <attribute id="Region" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Region"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Region"/>
+    </attribute>
+    <attribute id="Market" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Market"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Market"/>
+    </attribute>
+    <attribute id="Sales_Person_ID" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales_Person_ID"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Sales_Person_ID"/>
+    </attribute>
+    <attribute id="Sales_Person_Name" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales_Person_Name"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Sales_Person_Name"/>
+    </attribute>
+    <attribute id="Sales_Manager" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales_Manager"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Sales_Manager"/>
+    </attribute>
+    <attribute id="Product_ID" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product_ID"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Product_ID"/>
+    </attribute>
+    <attribute id="Product_Descriptionshort" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product_Descriptionshort"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Product_Descriptionshort"/>
+    </attribute>
+    <attribute id="Product_DescriptionMedium" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product_DescriptionMedium"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Product_DescriptionMedium"/>
+    </attribute>
+    <attribute id="Product_Descriptionlong" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product_Descriptionlong"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Product_Descriptionlong"/>
+    </attribute>
+    <attribute id="Product_Sub_Category" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product_Sub_Category"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Product_Sub_Category"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="Discount" order="4" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Discount"/>
+      <measureMapping columnObjectName="Projection_1" columnName="Discount"/>
+      <exceptionAggregationMetadata/>
+    </measure>
+    <measure id="Order_Quantity" order="6" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Order_Quantity"/>
+      <measureMapping columnObjectName="Projection_1" columnName="Order_Quantity"/>
+      <exceptionAggregationMetadata/>
+    </measure>
+    <measure id="Unit_Price" order="7" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Unit_Price"/>
+      <measureMapping columnObjectName="Projection_1" columnName="Unit_Price"/>
+      <exceptionAggregationMetadata/>
+    </measure>
+    <measure id="Product_List_Price" order="28" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Product_List_Price"/>
+      <measureMapping columnObjectName="Projection_1" columnName="Product_List_Price"/>
+      <exceptionAggregationMetadata/>
+    </measure>
+    <measure id="Product_Cost" order="29" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Product_Cost"/>
+      <measureMapping columnObjectName="Projection_1" columnName="Product_Cost"/>
+      <exceptionAggregationMetadata/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="100" y="196"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

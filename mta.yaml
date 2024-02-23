@@ -1,0 +1,27 @@
+_schema-version: "2.1"
+ID: DEMO001
+version: 0.0.1
+modules:
+- name: db
+  type: hdb
+  path: db
+  requires:
+  - name: hdi_db
+    properties:
+      TARGET_CONTAINER: ~{service-name}
+  - name: HDIUSER
+resources:
+- name: hdi_db
+  type: com.sap.xs.hdi-container
+  properties:
+    service-name: ${service-name}
+  parameters:
+    config:
+      database_id: b7f51cae-738f-483a-a932-dd7aad14a069
+      schema: TEKDEMOS
+    service: hana
+    service-plan: hdi-shared
+- name: HDIUSER
+  type: org.cloudfoundry.existing-service
+  parameters:
+    service-name: HDIUSER

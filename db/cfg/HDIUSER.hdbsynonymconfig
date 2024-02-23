@@ -1,0 +1,8 @@
+{
+  "syn::Sales_View4": {
+    "target": {
+      "object": "Sales_View4",
+      "schema": "TEKDEMOS"
+    }
+  }
+}
